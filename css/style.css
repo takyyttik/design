@@ -45,21 +45,22 @@
 
 
 body {
-    font-family: baskerville-urw, serif;
-    font-weight: 400;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #333;
     font-size: 87.5%;
     /* 14px; */
     line-height: 1.5;
     /* 14px x 1.5em = 21px */
+    text-wrap: pretty;
 }
 
 /* HEADINGS
     Based on Traditional Typographic Scale
     48, 36, 24, 21, 18, 16 */
 h1, h2, h3, h4, h5, h6 {
-    font-family: linotype-sabon, sans-serif;
+    font-family: utopia-std, serif;
     font-weight: 400;
     font-style: normal;
     margin: 0.5em 0;
@@ -602,7 +603,7 @@ section {
     padding-bottom: 5em;
 }
 .subpage-navigation {
-    font-family: linotype-sabon, sans-serif;
+    font-family: utopia-std, serif;
     font-weight: 400;
     font-style: normal;
     padding: 0;
@@ -920,8 +921,8 @@ form label {
     display: block;
 }
 form input, form textarea {
-    font-family: baskerville-urw, serif;
-    font-weight: 400;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1em;
     line-height: 1.15em;
@@ -960,14 +961,19 @@ form input [type=reset]:hover {
 }
 
 /* HOME PAGE */
+.landing {
+    h2 {
+        margin-top: 0;
+    }
+}
 
 /* WORKS PAGE */
 .fill {
     /* fill image full width */
-    margin: 0%;
+    margin: 1%;
     padding: 0%;
     img {
         min-width: 100%;
-        max-height: 50svh;
+        max-height: min-content;
     }
 }
