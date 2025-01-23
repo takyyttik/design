@@ -516,16 +516,7 @@ body {
     }
 }
 
-/* SPECIFIC PAGE CUSTOMIZATIONS */
-.landing {
-    h3 {
-        margin-top: 5svh;
-    }
-    h2 {
-        margin-bottom: 1svh;
-    }
 
-}
 
 /* Main Sections */
 section {
@@ -960,6 +951,7 @@ form input [type=reset]:hover {
     border-color: #003;
 }
 
+/* SPECIFIC PAGE CUSTOMIZATIONS */
 /* HOME PAGE */
 .landing {
     h2 {
@@ -967,13 +959,25 @@ form input [type=reset]:hover {
     }
 }
 
+
 /* WORKS PAGE */
-.fill {
-    /* fill image full width */
-    margin: 1%;
-    padding: 0%;
-    img {
-        min-width: 100%;
-        max-height: min-content;
+.works {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    section {
+        padding: 0;
+        .row > * {
+            margin: 0;
+        }
+        .row {
+            gap: 0;
+        }
+        img {
+            display: inline;
+            width: 755px;
+            vertical-align: center;
+            aspect-ratio: 5 / 4;
+            object-fit: cover;    
+        }
     }
 }
