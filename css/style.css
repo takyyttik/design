@@ -974,6 +974,12 @@ form input [type=reset]:hover {
         color:rgba(223, 236, 253, 1);
     }
 }
+.oneone-img {
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover; 
+    }
+}
 
 
 /* WORKS PAGE */
@@ -989,17 +995,14 @@ form input [type=reset]:hover {
             gap: 0;
         }
         img {
-            width: 720px;
-            height: 576px;
-        }
-        .img-hold {
-            display: inline;
-            /* vertical-align: center; */
+            /* width: 720px;
+            height: 576px; */
+            object-fit: cover;
+            max-height: 576px;
             aspect-ratio: 5 / 4;
-            /* max-height: 600px;
-            object-fit: cover; */
-            object-fit: fill;    
+            border-radius: 10px;
         }
+
         .grow img{
             transition: 1s ease;
         }
