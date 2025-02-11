@@ -831,8 +831,8 @@ section {
         position: absolute;
     }
     .toggle-nav li a:hover {
-        color: #fff;
-        background: rgb(171, 55, 99);
+        color: rgba(251, 253, 223, 1);
+        background: rgba(183, 88, 88, 1);
     }
     .toggle-nav .menu-button {
         margin: 0.8em 0;
@@ -841,6 +841,7 @@ section {
         border: none;
         padding: 0;
         cursor: pointer;
+        color: rgba(76, 70, 70, 1);
     }
     .toggle-nav .menu-button::selection {
         background-color: rgba(255 255 255 0);
@@ -849,17 +850,18 @@ section {
         color: rgba(255 255 255 0);
     }
     .toggle-nav .menu-button.navicon::after {
-        content: "=";
+        content: url(../img/menu.svg);
         font-size: 1.5em;
         margin-top: -0.1em;
-        margin-left: 0.5em;
+        margin-left: 0.3em;
         width: 1em;
         height: 1em;
         line-height: 1em;
         display: inline-block;
+        color: rgba(76, 70, 70, 1);
     }
     .toggle-nav[data-navstate=open] .menu-button.navicon::after {
-        content: "x";
+        content: url(../img/x.svg);
     }
     .toggle-nav ul {
         max-height: 0;
@@ -1035,4 +1037,13 @@ form input [type=reset]:hover {
         padding: 0%;
     }
     
+}
+
+.case-study {
+    h1 {
+        display: block;
+    }
+    .sticky {
+        /* Make text stay in position */
+    }
 }
