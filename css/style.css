@@ -1089,7 +1089,7 @@ form input [type=reset]:hover {
     
 }
 
-.case-study {
+.case-study-stick {
     h1 {
         /* the default is flex */
     display: block;
@@ -1113,4 +1113,62 @@ form input [type=reset]:hover {
             margin: 0%;
         }
     }
+}
+
+.case-study-card {
+    section {
+        padding-top: 0;
+    }
+    @media (max-width: 768px) {
+        section {
+            padding-top: 1.5em;
+        }
+    }
+    
+    .next {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .gallery-cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70vh;
+      }
+      
+      .item {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+        opacity: 95%;
+        
+        &:hover{
+          flex: 7;
+          opacity: 100%;
+        }
+      }
+      
+      .ff-1 { 
+        background-image: url(../img/fraufeuer_front.jpg);
+      }
+      
+      .ff-2 { 
+        background-image: url(../img/fraufeuer_powder.JPG);
+      }
+      
+      .ff-3 { 
+        background-image: url(../img/fraufeuer_sides.png);
+      }
+      
+      .ff-4 { 
+        background-image: url(../img/fraufeuer_sage.jpg);
+      }
+      
+      .ff-5 { 
+        background-image: url(../img/fraufeuer_violet.jpg);
+      }
 }
