@@ -10,5 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
             menunav.setAttribute('data-navstate', 'open');
         }
     });
-    //console.log('JS is ready')
+    //console.log('JS is ready')   
 });
+
+var swiper = new Swiper(".swiper", {
+    effect: "cards",
+    cardsEffect: {
+      perSlideOffset: 9,
+      perSlideRotate: 3,
+    },
+    grabCursor: true,
+    speed: 700,
+    initialSlide: 2,
+  });
