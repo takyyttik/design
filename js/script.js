@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    var swiper = new Swiper(".swiper", {
+        effect: "cards",
+        cardsEffect: {
+          perSlideOffset: 5,
+          perSlideRotate: 3,
+        },
+        grabCursor: true,
+        speed: 700,
+        initialSlide: 1,
+      });
+
     //TOGGLE MENU NAV VIA ADDING/REMOVING A DATA ATTRIBUTE
     const menubutton = document.querySelector('.menu-button');
     const menunav = document.querySelector('.toggle-nav');
@@ -13,13 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
     //console.log('JS is ready')   
 });
 
-var swiper = new Swiper(".swiper", {
-    effect: "cards",
-    cardsEffect: {
-      perSlideOffset: 9,
-      perSlideRotate: 3,
-    },
-    grabCursor: true,
-    speed: 700,
-    initialSlide: 2,
-  });
