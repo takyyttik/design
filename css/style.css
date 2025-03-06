@@ -229,7 +229,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 0 2em;
 }
 
 /* SMALL- MEDIA QUERY (e.g. for mobile overrides */
@@ -474,7 +474,7 @@ body {
 .site-header {
     background-color: transparent;
     /* border-bottom: 0px solid #ccc; */
-    padding: 0.5em 4%;
+    padding: 0.5em 1em;
     justify-content: space-between;
 }
 .site-header.on-top {
@@ -553,12 +553,12 @@ section {
     border-top: none;
     /* padding: 8em 1em 8em 1em; */
     /* margin-bottom: 1.5em; */
-    min-height: 80svh;
+    min-height: 100svh;
     display: grid;
     place-items: center;
     padding: 10svh 1em;
     /* background-color: rgba(253, 247, 223, 1); */
-    background-image: url(../img/index_hero.png);
+    background-image: url(../img/hero_v2.png);
     background-size: cover;
     background-position: center bottom;
     background-color: lightgreen;
