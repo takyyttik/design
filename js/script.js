@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         grabCursor: true,
         speed: 700,
-        initialSlide: 1,
-      });
+        initialSlide: 2,
+      });  
+});
+
+document.addEventListener('DOMContentLoaded', function() {
 
     //TOGGLE MENU NAV VIA ADDING/REMOVING A DATA ATTRIBUTE
     const menubutton = document.querySelector('.menu-button');

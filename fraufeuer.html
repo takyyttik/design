@@ -8,14 +8,23 @@
 
 <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jqp7rso.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'vgz4qeb',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
 
 </head>
 
 
 <body class="case-study-card">
-    <header class="site-header toggle-nav animated">
+    <header class="site-header toggle-nav animated on-top">
         <div class="site-id">
             <h1><a href="index.html"><img src="img/lam_logo.png" alt="katheren logo" width="65" height="65"></a></h1>
         </div>
@@ -50,13 +59,13 @@
                 </div>
 
                 <div class="row">
-                    <div class="one-third">
+                    <div class="one-third oneone-img">
                         <img src="img/placeholder1x1.png" alt="before">
                     </div>
-                    <div class="one-third">
-                        <img src="img/placeholder1x1.png" alt="middle">
+                    <div class="one-third oneone-img">
+                        <img src="img/ff_sketch.png" alt="middle">
                     </div>
-                    <div class="one-third">
+                    <div class="one-third oneone-img">
                         <img src="img/placeholder1x1.png" alt="after">
                     </div>
                 </div>

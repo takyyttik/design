@@ -8,7 +8,16 @@
 
 <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jqp7rso.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'vgz4qeb',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -16,7 +25,7 @@
 </head>
 
 
-<body>
+<body class="about">
     <header class="site-header toggle-nav animated">
         <div class="site-id">
             <h1><a href="index.html"><img src="img/lam_logo.png" alt="katheren logo" width="65" height="65"></a></h1>
@@ -35,26 +44,33 @@
         <div class="container">
             <section>
                 <div class="row">
-                    <div class="one-third column about">
+                    <div class="one-third column">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="img/katheren_profile.jpg" alt="about me image" width="2228" height="2971">
                                 </div>
-                                  
+                                <div class="swiper-slide">
+                                    <img src="img/katheren_hanfu.jpg" alt="Hanfu Photoshoot">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/katheren_flowers.jpg" alt="pink flower photoshoot">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/katheren_claw.jpg" alt="arcade travel">
+                                </div>
                                 <div class="swiper-slide">
                                     <img src="img/katheren_oias.JPG" alt="coaching">
                                 </div>
-                                  
                                 <div class="swiper-slide">
                                     <img src="img/katheren_kj.jpeg" alt="KillJoy Cosplay">
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="two-thirds column">
                         <h2>Katheren [kat-ther-ren] (n.)</h2>
-                        <p>A creative designer who seeks to learn more about the field of design and experiment with different visual styles. Specializes in flat 2D design, layouts, and providing a different point of view. </p>
+                        <p>A creative designer who seeks to learn more about the field of design and experiment with different visual styles. Specializes in flat 2D design, layouts, organization, and providing a different point of view. </p>
                         
                         <h3>Say Hi!</h3>
                         <p>Email: <a href="mailto:katheren@hawaii.edu">katheren@hawaii.edu</a></p>

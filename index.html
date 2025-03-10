@@ -8,7 +8,16 @@
 
 <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jqp7rso.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'vgz4qeb',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
 
 </head>
@@ -19,6 +28,7 @@
         <div class="site-id">
             <h1><a href="index.html"><img src="img/lam_logo.png" alt="katheren logo" width="65" height="65"></a></h1>
         </div>
+
         <nav class="site-navigation">
             <button class="menu-button navicon">Menu</button>
             <ul class="nav">
@@ -43,9 +53,9 @@
                     <div class="one-third column">
                         <img src="img/katheren_profile.jpg" alt="Profile Picture">
                     </div>
-                    <div class="two-thirds column">
-                        <h2>大家好！</h2>
-                        <p>My name is Katheren Jia-Li Lam. 嘉 (Jia) meaning auspicious, 麗 (Li) meaning beauty, and 林 (Lam, also read as Lin or Lum) meaning forest.</p>
+                    <div class="one-half column">
+                        <h2>大家好！ </h2>
+                        <p>My name is Katheren Jia-Li Lam. <span class="chinese">嘉</span> (Jia) meaning auspicious, <span class="chinese">麗</span> (Li) meaning beauty, and <span class="chinese">林</span> (Lam, also read as Lin or Lum) meaning forest.</p>
                         <p>I am a creator who’s learning wherever life takes me. I started my design career in 2022 at Kapiʻolani Community College after studying Business for 2 years.</p>
                         <p>When I’m not working, I enjoy playing video games, crocheting, and cooking!</p>
 

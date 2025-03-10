@@ -990,29 +990,6 @@ form input [type=reset]:hover {
 
 /* SPECIFIC PAGE CUSTOMIZATIONS */
 /* HOME PAGE */
-.landing {
-    min-height: 80svh;
-    display: grid;
-    place-items: center;
-    padding: 10svh 1em;
-    h2 {
-        margin-top: 0;  
-    }
-    background: rgba(183, 88, 88, 1);
-    color: rgba(234, 245, 251, 1);
-    a {
-        color: rgba(234, 245, 251, 1);
-    }
-    a:hover {
-        color:rgba(223, 236, 253, 1);
-    }
-}
-.oneone-img {
-    img {
-        aspect-ratio: 1 / 1;
-        object-fit: cover; 
-    }
-}
 .home-page {
     .site-header a{
         color: rgba(234, 245, 251, 1);
@@ -1031,7 +1008,48 @@ form input [type=reset]:hover {
         .toggle-nav[data-navstate=open] .menu-button.navicon::after {
             content: url(../img/x_light.svg);
         }
+    h1 {
+        color: rgba(234, 245, 251, 1);
+    }
+    .landing {
+        min-height: 80svh;
+        display: grid;
+        place-items: center;
+        padding: 10svh 1em;
+        background: rgba(183, 88, 88, 1);
+        color: rgba(234, 245, 251, 1);
+        h2 {
+            margin-top: 0;
+            font-family: "source-han-serif-tw-variable", sans-serif;
+            font-variation-settings: "wght" 500;
+        }
+        h3 {
+            margin-top: 2em;
+            margin-bottom: 5px;
+        }
+        a {
+            color: rgba(234, 245, 251, 1);
+        }
+        a:hover {
+            color:rgba(223, 236, 253, 1);
+        }
+        .button {
+            margin: 0;
+        }
+        .chinese {
+            font-family: "source-han-serif-tw-variable", sans-serif;
+            font-variation-settings: "wght" 250;
+        }
+    }    
 }
+
+.oneone-img {
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover; 
+    }
+}
+
 
 
 /* WORKS PAGE */
@@ -1070,6 +1088,7 @@ form input [type=reset]:hover {
     
 }
 
+/* ABOUT PAGE */
 .about {
     /* img {
         max-height: 200px;
@@ -1079,6 +1098,10 @@ form input [type=reset]:hover {
             object-position: 50% 20%;
         }
     } */
+    h3 {
+        margin-top: 1.5em;
+        margin-bottom: 5px;
+    }
     .swiper {
         width: 250px;
         height: auto;
@@ -1104,10 +1127,18 @@ form input [type=reset]:hover {
         border-radius: 5px;
         pointer-events: none;
     }
+    row {
+        margin: 0;
+    }
+    @media (max-width: 900px) {
+        .swiper {
+            padding-right: 3em;
+        }
+    }
 }
   
-
 .no-deco {
+
     ul {
         list-style-type: none;
         padding: 0%;
@@ -1115,6 +1146,7 @@ form input [type=reset]:hover {
     
 }
 
+/* CASE STUDY PAGES */
 .case-study-stick {
     h1 {
         /* the default is flex */
@@ -1142,13 +1174,25 @@ form input [type=reset]:hover {
 }
 
 .case-study-card {
+    .site-header a{
+        color: rgba(234, 245, 251, 1);
+    }
+    @media (max-width: 767px){
+        .toggle-nav .menu-button {
+            color: rgba(234, 245, 251, 1);
+        }
+        .toggle-nav li a:hover {
+        color: rgba(251, 253, 223, 1);
+        }
+        .toggle-nav .menu-button.navicon::after {
+            content: url(../img/menu_light.svg);    
+        }
+    }
+        .toggle-nav[data-navstate=open] .menu-button.navicon::after {
+            content: url(../img/x_light.svg);
+        }
     section {
         padding-top: 0;
-    }
-    @media (max-width: 768px) {
-        section {
-            padding-top: 1.5em;
-        }
     }
     
     .next {
