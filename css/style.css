@@ -511,11 +511,67 @@ body {
 .site-footer {
     background: rgba(234, 245, 251, 1);
     border-top: 0px solid #ccc;
+    li {
+        font-size: 13px;
+        font-style: italic;
+    }
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .no-deco {
+        margin: 0;
+        ul {
+            margin-top: 0;
+            padding-top: 5px;
+        }
+    }
+    /* -90deg rotate */
+    .rotate-vert-n{
+        writing-mode: sideways-lr;
+        align-content: end;
+        margin-top: 0;
+        h5 {
+            font-size: 13px;
+        }
+    }
+    .rotate-vert-p{
+        writing-mode: sideways-rl;
+        align-content: end;
+        margin-top: 0;
+        h5 {
+            font-size: 13px;
+        }
+    }
+    .link-icons {
+        margin-top: 1em;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .site-footer-nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            padding-top: 5px;      
+        }
+    }
+    .footer-logo {
+        a img{
+            max-height: 75px;    
+        }
+        
+    }
 }
+
 .site-footer .container {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
 }
+
 @media (min-width: 768px) {
     .site-footer .container {
         display: flex;
@@ -581,94 +637,6 @@ section {
     margin-bottom: 0;
 }
 
-/* Sub Pages with Multiple Column Layout */
-@media (min-width: 768px) {
-    .subpage-twocol {
-        display: flex;
-    }
-}
-@media (min-width: 768px) {
-    .subpage-sidebar {
-        width: 21%;
-        padding-right: 4%;
-    }
-}
-.subpage-sidebar .subheader {
-    font-size: 1em;
-    font-style: normal;
-    font-weight: normal;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    padding: 0.5em 0;
-    border-bottom: 1px solid #ccc;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #999;
-}
-
-@media (min-width: 768px) {
-    .subpage-main {
-        width: 70%;
-        padding-left: 4%;
-        border-left: 1pc solid #ccc;
-    }
-}
-.subpage-main section:first-child {
-    padding-top: 0;
-}
-.subpage-main section:last-child {
-    padding-bottom: 5em;
-}
-.subpage-navigation {
-    font-family: utopia-std, serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0;
-}
-.subpage-navigation ul {
-    margin: 0;
-    padding: 0;
-}
-.subpage-navigation ul li {
-    list-style: none;
-    margin-left: 0;
-}
-.subpage-navigation ul li a {
-    text-decoration: none;
-    display: block;
-    padding: 0.5em 0.875em;
-    border-bottom: 1px solid #ccc;
-}
-.subpage-navigation ul li ul li a {
-    padding-left: 1.875em;
-}
-
-/* Sub Page with list items */
-.list-item {
-    padding: 2em 0;
-}
-.list-item .featured-image {
-    width: 30%;
-    margin-right: 5%;
-    float: left;
-}
-.list-item article {
-    margin-left: 35%;
-}
-.list-item article h2 {
-    margin-top: 0;
-}
-.list-item:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.list-item + .list-item {
-    margin-top: 2em;
-    border-top: 1px solid #eee;
-    padding-top: 4em;
-}
-
 /* Swap the display order of two columns */
 .orderswap {
     flex-direction: row-reverse;
@@ -679,76 +647,6 @@ section {
 .vert-parent .column {
     display: flex;
     align-items: center;
-}
-
-/* Thumb List */
-.thumblist {
-    padding: 0;
-}
-.thumblist li {
-    list-style: none;
-    margin: 0;
-    padding: 3em 0;
-    clear: both;
-}
-.thumblist li img {
-    max-width: 30%;
-    margin: 0 2em 1em 0;
-    float: left;
-}
-.thumblist li p {
-    max-width: none;
-}
-.thumblist li + li {
-    border-top: 1px solid #ddd;
-}
-@media (max-width: 767px) {
-    .thumblist li img {
-        max-width: 100%;
-        margin: 0 0 1em 0;
-        float: none;
-    }
-}
-.thumblist-grid {
-    margin: 2em 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.thumblist-grid li {
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 2em;
-    width: 46%;
-    margin-right: 8%;
-    text-align: center;
-    font-size: 0.8em;
-}
-.thumblist-grid li a {
-    outline: none;
-}
-.thumblist-grid li a img {
-    transition: border-color 0.3s ease;
-    border-color: #fff;
-}
-.thumblist-grid li a img:hover {
-    border: 3px solid #39c;
-}
-.thumblist-grid li h5, .thumblist-grid li p {
-    line-height: 1.2em;
-}
-.thumblist-grid li:nth-child(even) {
-    margin-right: 0;
-}
-@media (min-width: 768px) {
-    .thumblist-grid li {
-        width: 19%;
-    }
-    .thumblist-grid li:nth-child(even) {
-    margin-right: 8%;
-    }.thumblist-grid li:nth-child(4n) {
-    margin-right: 0;
-    }
 }
 
 /* #SITE NAVIGATION */
@@ -796,11 +694,7 @@ section {
     }
     .site-navigation ul li {
         display: inline-block;
-        /* DROP DOWN MENU */
-        /* stacked nested lists */
-        /* hide nested lists by default */
-        /* show nested lists on hover */
-        /* SELECTED STATE */
+
     }
     .site-navigation ul li a {
         margin: 0 0.5em;
@@ -941,52 +835,6 @@ section {
     }
 }
 
-/* FORMS */
-form {
-    margin: 1.75em 0;
-}
-form label {
-    display: block;
-}
-form input, form textarea {
-    font-family: museo-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 1.15em;
-    display: block;
-    margin-bottom: 1.25em;
-    width: 100%;
-    color: #666;
-    padding: 0.35em;
-    border: 1px solid #ccc;
-}
-
-form textarea {
-    border: 1px solid #ccc;
-    min-height: 6em;
-}
-
-form input [type=button]
-form input [type=submit]
-form input [type=reset] {
-    width: auto;
-    background-color: #036;
-    border: 1px solid #036;
-    color: #fff;
-    padding: 0.75em 1em;
-    -webkit-border-radius: 0.32em;
-    -moz-border-radius: 0.32em;
-    border-radius: 0.32em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-form input [type=button]:hover,
-form input [type=submit]:hover,
-form input [type=reset]:hover {
-    background-color: #003;
-    border-color: #003;
-}
 
 /* SPECIFIC PAGE CUSTOMIZATIONS */
 /* HOME PAGE */
@@ -1036,11 +884,12 @@ form input [type=reset]:hover {
         .button {
             margin: 0;
         }
-        .chinese {
-            font-family: "source-han-serif-tw-variable", sans-serif;
-            font-variation-settings: "wght" 250;
-        }
     }    
+}
+
+.chinese {
+    font-family: "source-han-serif-tw-variable", sans-serif;
+    font-variation-settings: "wght" 250;
 }
 
 .oneone-img {
@@ -1138,12 +987,10 @@ form input [type=reset]:hover {
 }
   
 .no-deco {
-
     ul {
         list-style-type: none;
         padding: 0%;
     }
-    
 }
 
 /* CASE STUDY PAGES */
@@ -1172,6 +1019,10 @@ form input [type=reset]:hover {
         }
     }
 }
+.next {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .case-study-card {
     .site-header a{
@@ -1193,11 +1044,6 @@ form input [type=reset]:hover {
         }
     section {
         padding-top: 0;
-    }
-    
-    .next {
-        display: flex;
-        justify-content: flex-end;
     }
 
     .gallery-cards {
