@@ -509,12 +509,13 @@ body {
 
 /* Footer Only */
 .site-footer {
-    background: rgba(234, 245, 251, 1);
+    background-image: url(../img/footer-deco.jpg);
+    background-color: rgba(234, 245, 251, 1);
     border-top: 0px solid #ccc;
-    li {
+    /* li {
         font-size: 13px;
         font-style: italic;
-    }
+    } */
     h3 {
         display: flex;
         justify-content: center;
@@ -534,7 +535,7 @@ body {
         align-content: end;
         margin-top: 0;
         h5 {
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     .rotate-vert-p{
@@ -550,6 +551,10 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
+        mail:hover {
+            color: #b75858;
+            
+        }
     }
     .site-footer-nav {
         ul {
@@ -561,9 +566,10 @@ body {
     }
     .footer-logo {
         a img{
-            max-height: 75px;    
+            height: 90px;
+            width: auto;
+            object-fit: cover;
         }
-        
     }
 }
 
@@ -864,7 +870,7 @@ section {
         display: grid;
         place-items: center;
         padding: 10svh 1em;
-        background: rgba(183, 88, 88, 1);
+        background: url(../img/landing-deco.jpg);
         color: rgba(234, 245, 251, 1);
         h2 {
             margin-top: 0;
