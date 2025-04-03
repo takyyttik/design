@@ -513,12 +513,13 @@ body {
 
 /* Footer Only */
 .site-footer {
-    background-color: rgba(162, 189, 223, 1);
+    background-color: rgba(234, 245, 251, 1);
     border-top: 0px solid #ccc;
-    padding-top: 1em;
+    padding-top: 3em;
     text-align: center;
     background-image: url(../img/footer-deco.jpg);
-    background-position: 50%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
     .container {
         padding-top: 0.25em;
         padding-bottom: 0.25em;
@@ -561,8 +562,9 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
-        mail:hover {
-            color: #b75858;
+        .mail svg:hover {
+            color: rgba(183, 88, 88, 1);
+            
             
         }
     }
@@ -621,6 +623,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+    padding-bottom: 3em;
 }
 
 /* Main Sections */
@@ -725,10 +728,13 @@ section {
     padding: 0.5em 0.75em 0.4em 0.75em;
     
 }
-.site-navigation ul.nav li a:hover {
-    color: rgba(235, 125, 144, 1);
-    font-weight: bold;
-    @media (max-width: 768px) {
+
+
+@media (max-width: 768px) {
+    .site-navigation ul.nav li a{
+        color: rgba(251, 253, 223, 0.8);
+    }
+    .site-navigation ul.nav li a:hover{
         color: rgba(251, 253, 223, 1);
     }
 }
@@ -770,6 +776,7 @@ section {
     }
     .site-navigation ul li.selected a, .site-navigation ul li.current-menu-item a {
         font-weight: bold;
+        color: rgba(235, 125, 144, 1);
     }
     .site-navigation ul li.selected li a, .site-navigation ul lu.current-menu-item li a {
         font-weight: normal;
@@ -843,7 +850,7 @@ section {
         height: 1em;
         line-height: 1em;
         display: inline-block;
-        position: fixed;
+        position: absolute;
     }
 
     .toggle-nav[data-navstate=open] .menu-button.navicon::after {
@@ -931,7 +938,7 @@ section {
         color: rgba(234, 245, 251, 1);
     }
     .landing {
-        min-height: 80svh;
+        min-height: 100svh;
         display: grid;
         place-items: center;
         padding: 10svh 1em;
@@ -939,6 +946,8 @@ section {
         color: rgba(234, 245, 251, 1);
         @media (min-width: 767px){
             background-image: url(../img/landing-deco.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
         }
         h2 {
             margin-top: 0;
@@ -958,7 +967,21 @@ section {
         .button {
             margin: 0;
         }
-    }    
+    }   
+    .oneone-img img {
+        transition: 1s ease;
+    }
+    
+    .oneone-img img:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: 1s ease;
+        opacity: 90%;
+    }
+    .home-works {
+        padding-top: 5%;
+    }
 }
 
 .chinese {
@@ -1024,11 +1047,14 @@ section {
     .about-animation {
         margin-top: 2em;
         padding: 0;
-        background-color: rgba(253, 247, 223, 1);
+        /* background-color: rgba(253, 247, 223, 1); */
+        border-top: 5px double rgba(76, 70, 70, 1);
+        border-bottom: 5px double rgba(76, 70, 70, 1);
+        
     }
     .resume {
-        padding-top: 2em;
-        background-color: rgba(253, 247, 223, 1);
+        padding-top: 4em;
+        /* background-color: rgba(253, 247, 223, 1); */
         
     }
     .row .no-deco h3 {
