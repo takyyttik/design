@@ -26,4 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     //console.log('JS is ready')   
 });
-
