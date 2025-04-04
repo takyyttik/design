@@ -1137,23 +1137,13 @@ section {
 .case-study-card {
     .site-header a{
         color: rgba(234, 245, 251, 1);
-    }
-    @media (max-width: 767px){
-        .toggle-nav .menu-button {
-            color: rgba(234, 245, 251, 1);
-        }
-        .toggle-nav li a:hover {
-        color: rgba(251, 253, 223, 1);
-        }
-        .toggle-nav .menu-button.navicon::after {
-            content: url(../img/menu_light.svg);    
-        }
-    }
-        .toggle-nav[data-navstate=open] .menu-button.navicon::after {
-            content: url(../img/x_light.svg);
-        }
+    }        
     section {
         padding-top: 0;
+    }
+    h2 {
+        margin-top: 2em;
+        margin-bottom: 0;
     }
     .row img {
         width: 100%;
@@ -1163,53 +1153,59 @@ section {
         flex-direction: row;
         width: 100%;
         height: 70vh;
-      }
+        background-color: #333;
+    }
       
-      .item {
+    .item {
         flex: 1;
         height: 100%;
         background-position: center;
         background-size: cover;
         background-repeat: none;
         transition: flex 0.8s ease;
-        opacity: 95%;
-        
+        opacity: 85%;
         &:hover{
-          flex: 7;
-          opacity: 100%;
-        }
-      }
-      
-      .ff-1 { 
+            flex: 7;
+            opacity: 100%;
+            }
+    }
+    .three-imgs {
+        padding: 3em 0 2em 0;
+    }
+    
+    .ff-1 { 
         background-image: url(../img/fraufeuer_front.jpg);
-      }
-      
-      .ff-2 { 
+    }
+    
+    .ff-2 { 
         background-image: url(../img/fraufeuer_powder.JPG);
-      }
-      
-      .ff-3 { 
+    }
+    
+    .ff-3 { 
         background-image: url(../img/fraufeuer_sides.png);
-      }
-      
-      .ff-4 { 
+    }
+    
+    .ff-4 { 
         background-image: url(../img/fraufeuer_sage.jpg);
-      }
-      
-      .ff-5 { 
+    }
+    
+    .ff-5 { 
         background-image: url(../img/fraufeuer_violet.jpg);
-      }
+    }
 }
 
 .case-study-block {
     .site-main .container {
-        margin-top: 3em;
+        margin-top: 4em;
         @media (max-width: 767px){
             margin-top: 5em;
             text-align: center;
             p {
                 margin: auto;
             }
+        }
+        h2 {
+            padding-top: 0.25em;
         }
     }
     one-half img {
