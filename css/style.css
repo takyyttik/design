@@ -640,7 +640,6 @@ section {
 }
 
 .hero {
-    /* background: rgba(223, 236, 253, 1); */
     border-top: none;
     /* padding: 8em 1em 8em 1em; */
     /* margin-bottom: 1.5em; */
@@ -648,26 +647,45 @@ section {
     display: grid;
     place-items: center;
     padding: 10svh 1em;
-    /* background-color: rgba(253, 247, 223, 1); */
-    background-image: url(../img/hero_v2.jpg);
+    /* background-image: url(../img/hero_v2.jpg); */
     background-size: cover;
     background-position: center bottom;
-    background-color: lightgreen;
+    background-color: rgba(136, 190, 136, 1);
 }
+.hero h3 {
+    color: rgba(247, 247, 190, 1);
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.hero .h1-left, .hero .h1-right {
+    font-size: 96px;
+    align-items: normal;
+    margin: 0;
+    margin-bottom: 10px;
+    color: rgba(251, 253, 223, 1);
+    text-transform: uppercase;
+}
+.hero .h1-left {
+    justify-content: left; 
+}
+.hero .h1-right {
+    justify-content: right;
+}
+
 .hero h1, .hero h2 {
     font-style: 3em;
     line-height: 1.1em;
     min-width: 10em;
     max-width: 20em;
     margin-bottom: 10px;
-    
 }
 .hero h2 {
     color: rgba(223, 236, 253, 1);
 }
 .hero p {
-    max-width: 40em;
+    max-width: 960px;
     display: flex;
+    align-items: center;
     justify-content: center;
     a.button {
         margin: 5px;
@@ -776,7 +794,7 @@ section {
     }
     .site-navigation ul li.selected a, .site-navigation ul li.current-menu-item a {
         font-weight: bold;
-        color: rgba(235, 125, 144, 1);
+        color:rgba(183, 88, 88, 1);
     }
     .site-navigation ul li.selected li a, .site-navigation ul lu.current-menu-item li a {
         font-weight: normal;
@@ -941,7 +959,7 @@ section {
         min-height: 100svh;
         display: grid;
         place-items: center;
-        padding: 10svh 1em;
+        padding: 14svh 1em;
         background-color: rgba(183, 88, 88, 1);
         color: rgba(234, 245, 251, 1);
         @media (min-width: 767px){
@@ -968,19 +986,37 @@ section {
             margin: 0;
         }
     }   
-    .oneone-img img {
+    .oneone-img{
         transition: 1s ease;
     }
-    
-    .oneone-img img:hover {
+    .project-details {
+        transform: translate(0, -72px);
+        background-color: rgba(234, 245, 251, .8);
+        margin: 0;
+        padding: 1px;
+        transition: 1s ease;
+        h3 {
+            margin: 0;
+            margin-top: 3px;
+            padding-left: 5px;
+        }
+        p {
+            margin-bottom: 3px;
+            padding-left: 5px;
+        }
+    }
+    .oneone-img:hover {
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
         transition: 1s ease;
         opacity: 90%;
     }
+    
     .home-works {
         padding-top: 5%;
+        padding-bottom: 0;
+        
     }
 }
 
@@ -1050,7 +1086,7 @@ section {
         /* background-color: rgba(253, 247, 223, 1); */
         border-top: 5px double rgba(76, 70, 70, 1);
         border-bottom: 5px double rgba(76, 70, 70, 1);
-        
+        align-items: center;
     }
     .resume {
         padding-top: 4em;
