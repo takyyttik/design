@@ -652,10 +652,13 @@ section {
     background-position: center bottom;
     background-color: rgba(136, 190, 136, 1);
 }
-.hero h3 {
-    color: rgba(247, 247, 190, 1);
+.hero h4 {
+    color: rgba(253, 247, 223, 1);
     margin-top: 1em;
     margin-bottom: 0;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal
 }
 .hero .h1-left, .hero .h1-right {
     font-size: 96px;
@@ -678,9 +681,6 @@ section {
     min-width: 10em;
     max-width: 20em;
     margin-bottom: 10px;
-}
-.hero h2 {
-    color: rgba(223, 236, 253, 1);
 }
 .hero p {
     max-width: 960px;
@@ -960,13 +960,8 @@ section {
         display: grid;
         place-items: center;
         padding: 14svh 1em;
-        background-color: rgba(183, 88, 88, 1);
-        color: rgba(234, 245, 251, 1);
-        @media (min-width: 767px){
-            background-image: url(../img/landing-deco.jpg);
-            background-repeat: no-repeat;
-            background-position: 50% 0%;
-        }
+        background-color: rgba(234, 245, 251, 1);
+        color: rgba(76, 70, 70, 1);
         h2 {
             margin-top: 0;
             font-family: "source-han-serif-tw-variable", sans-serif;
@@ -986,39 +981,20 @@ section {
             margin: 0;
         }
     }   
-    .oneone-img{
-        transition: 1s ease;
-    }
-    .project-details {
-        transform: translate(0, -72px);
-        background-color: rgba(234, 245, 251, .8);
-        margin: 0;
-        padding: 1px;
-        transition: 1s ease;
-        h3 {
-            margin: 0;
-            margin-top: 3px;
-            padding-left: 5px;
-        }
-        p {
-            margin-bottom: 3px;
-            padding-left: 5px;
-        }
-    }
-    .oneone-img:hover {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        transition: 1s ease;
-        opacity: 90%;
-    }
-    
     .home-works {
         padding-top: 5%;
-        padding-bottom: 0;
-        
+        padding-bottom: 5%;
+    }
+    .bush-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0px, 320px);
+        opacity: 80%;
     }
 }
+
 
 .chinese {
     font-family: "source-han-serif-tw-variable", sans-serif;
@@ -1026,12 +1002,37 @@ section {
 }
 
 .oneone-img {
+    transition: 1s ease;
+    /* position: relative; */
     img {
         aspect-ratio: 1 / 1;
         object-fit: cover; 
     }
 }
-
+.oneone-img:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+    opacity: 90%;
+}
+.oneone-img .project-details {
+    /* transform: translate(0, -72px); */
+    /* background-color: rgba(234, 245, 251, .8); */
+    margin: 0;
+    /* padding: 1em; */
+    transition: 1s ease;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    h3 {
+        margin: 0;
+        margin-top: 3px;
+        padding-left: 5px;
+    }
+    p {
+        margin-bottom: 3px;
+        padding-left: 5px;
+    }
+}
 
 
 /* WORKS PAGE */
@@ -1080,6 +1081,14 @@ section {
             object-position: 50% 20%;
         }
     } */
+     .intro-software {
+        display: flex;
+        align-items: end;
+        gap: 10px;
+     }
+     .intro-contact {
+        text-align: right;
+     }
     .about-animation {
         margin-top: 2em;
         padding: 0;
@@ -1246,5 +1255,14 @@ section {
     }
     one-half img {
         width: 100%;
+    }
+}
+
+.secondstar {
+    h3 {
+        text-align: center;
+    }
+    .full-width {
+        padding: 0;
     }
 }
