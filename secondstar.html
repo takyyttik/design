@@ -23,7 +23,7 @@
 </head>
 
 
-<body class="secondstar">
+<body class="secondstar-casestudy">
     <header class="site-header toggle-nav animated on-top">
         <div class="site-id">
             <h1><a href="index.html"><img src="img/lam_logo.png" alt="katheren logo" width="80" height="80"></a></h1>
@@ -42,7 +42,7 @@
     <main class="site-main">
         <section class="full-width">
             <div>
-                <img src="img/secondstar_mockup.jpg" alt="second star image wrap cover" width="1600">
+                <img src="img/ss_mockup.jpg" alt="second star image wrap cover" width="1600">
             </div>
         </section>
         <section>
@@ -51,11 +51,14 @@
                     <div class="one-half">
                         <h2>The meaning of "nostolgia"</h2>
                         <p>A dreamscape book of songs and memories, this album is a fictional project that plays on the concept of "neverland."</p>
-                        <p><a class="button" href="https://open.spotify.com/playlist/6Tib5bM7ISMJzzjBbuAq3Z?si=d9e6945dea054beb">Listen along</a></p>
+                        <p><a class="button" href="https://open.spotify.com/playlist/6Tib5bM7ISMJzzjBbuAq3Z?si=d9e6945dea054beb" target="#">Listen along</a></p>
                     </div>
                     <div class="one-half">
                         <img src="img/ss_cover.jpg" alt="Second Star Page 1" width="555">
                     </div>
+                </div>
+                <div class="slider-playlist">
+                    
                 </div>
 
                 <div class="row">
@@ -72,23 +75,124 @@
                         <h3>"Time"</h3>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="one-half centered column">
-                        <img src="img/ss_forever_pages.jpg" alt="">
+            </div>
+        </section>
+        <section >
+            <div class="container">
+                <div class="listen-along">
+                    <div class="content-playlist">
+                        <div class="slider-playlist">
+                            <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://placehold.co/600x400" alt="placeholder">
+                                    <h1>first card</h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://placehold.co/600x400" alt="placeholder">
+                                    <h1>second caard</h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://placehold.co/600x400" alt="placeholder">
+                                    <h1>third card</h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://placehold.co/600x400" alt="placeholder">
+                                    <h1>fourth card</h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://placehold.co/600x400" alt="placeholder">
+                                    <h1>fifth card</h1>
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div class="playlist">
+                            <div class="playlist-item">
+                                <img src="https://placehold.co/600x400" alt="placeholder">
+                                <div class="song">
+                                    <p>title one</p>
+                                    <p>subtitle one</p>
+                                </div>
+                                <p>3:01</p>
+                                <i class="fa-regular fa-heart like-btn"></i>
+                            </div>
+                            <div class="playlist-item">
+                                <img src="https://placehold.co/600x400" alt="placeholder">
+                                <div class="song">
+                                    <p>title two</p>
+                                    <p>subtitle two</p>
+                                </div>
+                                <p>2:38</p>
+                                <i class="fa-regular fa-heart like-btn"></i>
+                            </div>
+                            <div class="playlist-item">
+                                <img src="https://placehold.co/600x400" alt="placeholder">
+                                <div class="song">
+                                    <p>title three</p>
+                                    <p>subtitle three</p>
+                                </div>
+                                <p>3:31</p>
+                                <i class="fa-regular fa-heart like-btn"></i>
+                            </div>
+                            <div class="playlist-item">
+                                <img src="https://placehold.co/600x400" alt="placeholder">
+                                <div class="song">
+                                    <p>title four</p>
+                                    <p>subtitle four</p>
+                                </div>
+                                <p>3:23</p>
+                                <i class="fa-solid fa-heart like-btn"></i>
+                            </div>
+                            <div class="playlist-item">
+                                <img src="https://placehold.co/600x400" alt="placeholder">
+                                <div class="song">
+                                    <p>title five</p>
+                                    <p>subtitle five</p>
+                                </div>
+                                <p>2:37</p>
+                                <i class="fa-regular fa-heart like-btn"></i>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <div class="player">
+                            <audio id="audioPlayer" src="song-list/AfricanFella-CumbiaDeli.mp3" type="audio/mpeg"></audio>
+                    
+                            <div class="controls">
+                            <i class="fa-solid fa-shuffle" id="shuffleBtn"></i>
+                            <i class="fa-solid fa-backward" id="prevBtn"></i>
+                            <button id="playPauseBtn">
+                                <i class="fa-solid fa-play" id="playPauseIcon"></i>
+                            </button>
+                            <i class="fa-solid fa-forward" id="nextBtn"></i>
+                            <div class="volume">
+                                <i class="fa-solid fa-volume-high"></i>
+                                <input type="range" id="volume-range" min="0" max="100" value="100" />
+                            </div>
+                            </div>
+                    
+                            <input type="range" value="0" id="progress-bar" />
+                        </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="one-half column">
-                        <h2>Follow the Second Star to Neverland</h2>
-                        <p>A place where all the “lost kids” can call home, a place where time moves slower than the rest, a place where we can escape from reality. LIFELINE is about the time spent together and accepting that one day we’ll all grow up and part ways, but remember the highs and lows of our youth.</p>
-                    </div>
-                    <div class="one-half">
-                        <img src="img/ss_dejavu.jpg" alt="Second Star deja vu image pairing" width="555">
-                    </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="one-half centered column">
+                    <img src="img/ss_forever_pages.jpg" alt="">
                 </div>
+            </div>
 
+            <div class="row">
+                <div class="one-half column">
+                    <h2>Follow the Second Star to Neverland</h2>
+                    <p>A place where all the “lost kids” can call home, a place where time moves slower than the rest, a place where we can escape from reality. LIFELINE is about the time spent together and accepting that one day we’ll all grow up and part ways, but remember the highs and lows of our youth.</p>
+                </div>
+                <div class="one-half">
+                    <img src="img/ss_dejavu.jpg" alt="Second Star deja vu image pairing" width="555">
+                </div>
             </div>
         </section>
     </main>
