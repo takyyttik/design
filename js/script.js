@@ -45,11 +45,22 @@ document.addEventListener('DOMContentLoaded', function() {
     let isSongLoaded = false;
     
     const songs = [
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/SynCole-FeelGood.mp3",
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/HarddopeClarx-Castle.mp3",
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/PlayDead-NEFFEX.mp3",
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/KnowMyself-PatrickPatrikios.mp3",
-      "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/BesomorphCoopex-Redemption.mp3",
+        "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/SynCole-FeelGood.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/HarddopeClarx-Castle.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/PlayDead-NEFFEX.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/KnowMyself-PatrickPatrikios.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/BesomorphCoopex-Redemption.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/PlayDead-NEFFEX.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/KnowMyself-PatrickPatrikios.mp3",
+  "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/BesomorphCoopex-Redemption.mp3",
+    //   "https://open.spotify.com/track/2C5nlzIMJ81NYmeGhofNNP?si=1eaeb273c25d4c6b",
+    //   "https://open.spotify.com/track/20z2AUpFbE6n5kVSDavtap?si=fa442cf8e6ca4276",
+    //   "https://open.spotify.com/track/6s2TBrbs9bTC1faiyww2AN?si=55396c1f4b4d454c",
+    //   "https://open.spotify.com/track/0GLXQAdrh4tdvz0JLw8DX8?si=ac9bf7d153294e69",
+    //   "https://open.spotify.com/track/7nqFGg6gPi3Fhegjb0bjw2?si=d76b6cb1a9fb4d68", 
+    //   "https://open.spotify.com/track/2aL4lMGhWdPpyPL6COPou7?si=77ebc550a92e46b2",
+    //   "https://open.spotify.com/track/2DFstXXfi4Z15AFyk4lgHh?si=0a264ba1715a47d1",
+    //   "https://open.spotify.com/track/4sTjUYjIC02RkNa1A8rWjE?si=6bba5a6eea7947bd"
     ];
     
     var swiper = new Swiper(".swiper", {
