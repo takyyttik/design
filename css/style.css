@@ -1351,7 +1351,10 @@ section {
     background: linear-gradient(0deg, rgba(234, 245, 251, 1) 0%, rgba(76, 70, 70, 0.7) 30%, rgba(76, 70, 70, 0.9) 50%, rgba(76, 70, 70, 0.7) 70%, rgba(234, 245, 251, 1) 100%);
 }
 .cover {
-    height: 90svh;
+    min-height: 50svh;
+    @media (min-width:754px) {
+        min-height: 90svh;
+    }
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1364,11 +1367,13 @@ section {
     color: rgba(234, 245, 251, 1);
     /* overflow-y: scroll; */
     padding: 1em;
+    
     img {
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 5px;
         overflow: hidden;
+        justify-content: center;
     }
     h3 {
         justify-content: left;
@@ -1377,6 +1382,7 @@ section {
     p {
         padding-top: 1em;
     }
+    
 }
 
 
@@ -1448,6 +1454,7 @@ section {
         /* grid-template-columns: 45% 55%; */
         grid-template-columns: 1fr;
         align-items: top;
+        margin-bottom: 4em;
     }
       
     /** Slider */
@@ -1505,7 +1512,7 @@ section {
         height: auto;
         padding: 8px 10px;
         margin-bottom: 15px;
-        border-bottom: 2px solid var(--primary-clr);
+        border-bottom: 2px solid rgba(183, 88, 88, 1);
         color: rgba(234, 245, 251, 1);
 
         cursor: pointer;
@@ -1668,6 +1675,9 @@ section {
         .swiper {
             width: 270px;
         }
+        #volume-range {
+            width: 90px;
+        }
     }
     
     @media (max-width: 1100px) {
@@ -1681,6 +1691,9 @@ section {
     
         .slider-playlist {
             grid-template-columns: 50% 50%;
+        }
+        #volume-range {
+            width: 90px;
         }
     }
     
@@ -1699,12 +1712,17 @@ section {
             margin: 0;
         }
     
-        .player {
-            width: 110%;
-        }
+        /* .player {
+            width: 100%;
+        } */
     
         #volume-range {
             width: 50px;
+        }
+    }
+    @media (max-width: 750px) {
+        #volume-range {
+            width: 70px;
         }
     }
     
@@ -1723,9 +1741,9 @@ section {
             margin-bottom: 10px;
         }
     
-        .player {
+        /* .player {
             width: 115%;
-        }
+        } */
     
         .controls {
             column-gap: 15px;
@@ -1747,7 +1765,7 @@ section {
         #volume-range {
             left: 20px;
             top: 6px;
-            width: 40px;
+            width: 50px;
         }
     }
 }
