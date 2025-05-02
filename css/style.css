@@ -1214,9 +1214,11 @@ section {
 
 /* CASE STUDY PAGES */
 .logo{
-    padding-top: 2em;
+    padding-top: 3em;
     text-align: center;
     margin: 0;
+    display: contents;
+    justify-content: center;
 }
 .case-study-stick {
     h1 {
@@ -1257,10 +1259,7 @@ section {
     }
     h2 {
         margin-top: 2em;
-        margin-bottom: 0;
-    }
-    .row img {
-        width: 100%;
+        /* margin-bottom: 0; */
     }
     .gallery-cards {
         display: flex;
@@ -1307,6 +1306,18 @@ section {
         background-image: url(../img/fraufeuer_violet.jpg);
     }
 }
+.pf-fuel h2, .pf-fuel h4 {
+    font-family: "pf-fuel-grime", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.sofia h2, .sofia h4 {
+    text-align: center;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .case-study-block {
     .site-main .container {
@@ -1335,7 +1346,9 @@ section {
 
 .secondstar-casestudy {
     section {
-        margin-bottom: 2em;
+        padding: 0;
+        margin-bottom: 1em;
+        
     }
     .site-header a{
         color: rgba(234, 245, 251, 1);
@@ -1349,15 +1362,12 @@ section {
     } */
     .full-width {
         padding: 0;
+        margin-bottom: 2em;
         img {
-            height: 50em;
+            /* height: 50em; */
             width: 100%;
-            overflow: hidden;
+            overflow-y: hidden;
         } 
-    }
-    .ss-logo img {
-        align-items: center;
-        max-width: 10em;
     }
     .listen-button {
         padding-top: 1em;
@@ -1370,44 +1380,37 @@ section {
         
     }
 }
-.color {
-    display: flex;
+.asset-header {
+    position: relative;
+    margin-bottom: 2em;
+}
+.assets {
     justify-content: space-around;
 }
-.typography {
-    align-items: start;
-    display: flex;
-    justify-content: space-around;
+.assets img {
+    aspect-ratio: 1/1;
+    width: 100px;
+    margin: .5em;
 }
-.bookmaina {
-    h2, h4 {
-        text-align: center;
-    }
+
+.bookmaina h2, .bookmaina h4 {
+    text-align: center;
     font-family: "bookmania", serif;
     font-weight: 400;
     font-style: normal;
 }
-.omnes {
-    h2, h4 {
-        text-align: center;
-    }
+.omnes h2, .omnes h4{
+    text-align: center;
     font-family: "omnes-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
-.gulim {
-    h2, h4 {
-        text-align: center;
-    }
+.gulim h2, .gulim h4{
+    text-align: center;
     font-family: "gulim", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-.project-asset img{
-    aspect-ratio: 1/1;
-    width: 100px;
-}
-
 
 /* PLAYLIST CODEPEN https://codepen.io/ecemgo/pen/PwYyNxa*/
 :root {
@@ -1459,7 +1462,40 @@ section {
     }
     
 }
+.port-box {
+    --gridgap: 2em;
+}
+.port-box>* {
+    background-color: rgba(171, 201, 212, 0.1);
+    border-radius: .5em;
+}
+@media (min-width: 768px){
+    .port-box {
+        margin-top: var(--gridgap);
+        margin-bottom: var(--gridgap);
+    }
+    .port-box>* {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.port-box.padded>* {
+    padding: 2em 3em;
+}
 
+.color-chips {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(110px, 100%), 1fr));
+    gap: 10px;
+    align-items: start;
+}
+
+.color-chips svg {
+    width: 100%;
+    height: auto;
+}
 
 .listen-along {
     
