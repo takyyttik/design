@@ -1083,12 +1083,14 @@ section {
 
 /* WORKS PAGE */
 .works {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: var(--gridgap);
+    margin-bottom: var(--gridgap);
     section {
         padding: 0;
+        --gridgap: 2em;
+        justify-content: space-around;
         .row > * {
-            margin: 1em;
+            margin: 1em 2em;
         }
         .row {
             gap: 0;
@@ -1097,7 +1099,7 @@ section {
             /* width: 720px;
             height: 576px; */
             object-fit: cover;
-            max-height: 576px;
+            /* max-height: 576px; */
             aspect-ratio: 5 / 4;
             border-radius: 10px;
         }
@@ -1464,10 +1466,12 @@ section {
 }
 .port-box {
     --gridgap: 2em;
+    
 }
 .port-box>* {
     background-color: rgba(171, 201, 212, 0.1);
     border-radius: .5em;
+    padding-top: .5em;   
 }
 @media (min-width: 768px){
     .port-box {
@@ -1878,5 +1882,41 @@ section {
             top: 6px;
             width: 50px;
         }
+    }
+}
+
+.flowerknows-casestudy {
+    #fk_hero {
+        padding-top: 0;
+    }
+    .full-width {
+        padding: 0;
+        margin-bottom: 2em;
+        img {
+            /* height: 50em; */
+            width: 100%;
+            overflow-y: hidden;
+        } 
+    }
+    .site-header a{
+        color: rgba(234, 245, 251, 1);
+    }
+}
+
+.ohwhaleco-casestudy {
+    #fk_hero {
+        padding-top: 0;
+    }
+    .full-width {
+        padding: 0;
+        margin-bottom: 2em;
+        img {
+            /* height: 50em; */
+            width: 100%;
+            overflow-y: hidden;
+        } 
+    }
+    .site-header a{
+        color: rgba(234, 245, 251, 1);
     }
 }
