@@ -1902,6 +1902,12 @@ section {
         color: rgba(234, 245, 251, 1);
     }
 }
+.minion {
+    text-align: center;
+    font-family: "minion-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 .ohwhaleco-casestudy {
     #fk_hero {
@@ -1919,4 +1925,16 @@ section {
     .site-header a{
         color: rgba(234, 245, 251, 1);
     }
+}
+.kaisei {
+    text-align: center;
+    font-family: "kaisei-tokumin", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.yoonbubble {
+    text-align: center;
+    font-family: "yoon-bubblebubble", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
