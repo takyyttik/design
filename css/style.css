@@ -1499,6 +1499,10 @@ section {
     font-weight: 300;
     font-style: normal;
 }
+.sketches {
+    width: fit-content;
+    display: inline-flex;
+}
 
 /* PLAYLIST CODEPEN https://codepen.io/ecemgo/pen/PwYyNxa*/
 :root {
