@@ -1337,23 +1337,23 @@ section {
     }
     
     .ff-1 { 
-        background-image: url(../img/fraufeuer_front.jpg);
+        background-image: url(../img/fraufeuer_front.webp);
     }
     
     .ff-2 { 
-        background-image: url(../img/fraufeuer_powder.JPG);
+        background-image: url(../img/fraufeuer_powder.webp);
     }
     
     .ff-3 { 
-        background-image: url(../img/fraufeuer_sides.png);
+        background-image: url(../img/fraufeuer_sides.webp);
     }
     
     .ff-4 { 
-        background-image: url(../img/fraufeuer_sage.jpg);
+        background-image: url(../img/fraufeuer_sage.webp);
     }
     
     .ff-5 { 
-        background-image: url(../img/fraufeuer_violet.jpg);
+        background-image: url(../img/fraufeuer_violet.webp);
     }
 }
 .pf-fuel h2, .pf-fuel h4 {
