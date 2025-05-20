@@ -50,6 +50,7 @@ html{
 :root {
     --dark-color: rgba(76, 70, 70, 1);
     --pink: rgba(183, 88, 88, 1);
+    --light-pink: rgba(235, 125, 144, 1);
     --hover-pink:rgba(238, 41, 97, 1);
     --maroon: rgba(144, 23, 56, 1);
     --background-color: rgba(234, 245, 251, 1);
@@ -988,25 +989,37 @@ section {
     }
 }
 .light-toggle-nav {
-    ul li a{
-        color: var(--background-color);
+    header {
+        ul li a{
+            color: var(--background-color);
+        }
+        .toggle-nav[data-navstate=open] li a {
+            color: var(--dark-color);
+        }
+        @media (max-width: 767px){
+            .toggle-nav .menu-button {
+                color: rgba(234, 245, 251, 1);
+            }
+            .toggle-nav li a:hover {
+            color: rgba(251, 253, 223, 1);
+            }
+            .toggle-nav .menu-button.navicon::after {
+                content: url(../img/menu_light.svg);    
+            }
+            .toggle-nav[data-navstate=open] .menu-button.navicon::after {
+                content: url(../img/x_light.svg);
+            }
+        }
     }
-    .toggle-nav[data-navstate=open] li a {
+    .dropdown ul li ul li a {
         color: var(--dark-color);
     }
-    @media (max-width: 767px){
-        .toggle-nav .menu-button {
-            color: rgba(234, 245, 251, 1);
-        }
-        .toggle-nav li a:hover {
-        color: rgba(251, 253, 223, 1);
-        }
-        .toggle-nav .menu-button.navicon::after {
-            content: url(../img/menu_light.svg);    
-        }
-        .toggle-nav[data-navstate=open] .menu-button.navicon::after {
-            content: url(../img/x_light.svg);
-        }
+    .dropdown ul li ul li.selected a {
+        color: var(--pink);
+    }
+    .dropdown ul li ul li a:hover {
+        background-color: var(--light-pink);
+        color: var(--yellow);
     }
 }
 
