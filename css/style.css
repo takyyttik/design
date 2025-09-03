@@ -1060,6 +1060,117 @@ section {
 }
 
 /* HOME PAGE */
+/* FOR THE REST STUDIO */
+.for-the-rest{
+    section {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    h1{
+        display: grid;
+        text-transform: uppercase;
+        justify-content: start;
+    }
+    .landing {
+    min-height: 80svh;
+    padding-top: 50svh;
+    h1{
+        display: grid;
+        align-items: end;
+        justify-content: end;
+    }}
+    .about {
+        .photostrip{
+            img {
+                width: 10em;
+            }
+            .dark-strip {transform: rotate(-10deg) translate(50px, 0px);}
+
+            .light-strip {transform: rotate(10deg) translate(20px, -120px);}
+    }}
+    /* CARD SYSTEM  */
+    .expandable-cards {
+    display: flex;
+        summary {
+            list-style: none;
+        }
+        details {
+            flex: 1;
+            margin: 1em;
+            display: block;
+            border-radius: 1em;
+            overflow: hidden;
+            position: relative;
+            height: 350px;
+            transition: all .4s ease-out;
+            cursor: pointer;
+            --thumb-text-opacity: 0;
+            --thumb-image-scale: 1;
+            box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        }
+    }
+    .expandable-cards details:focus-within, .expandable-cards details:focus {
+    outline: 2px solid white;
+    }
+    .expandable-cards details[open] {
+    flex: 3;
+    }
+    .expandable-cards details:focus-within, .expandable-cards details:focus, .expandable-cards details:hover {
+    --thumb-text-opacity: 1;
+    --thumb-image-scale: 1.1;
+    }
+    .expandable-cards .thumb-image img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-out;
+    scale: var(--thumb-image-scale);
+    }
+    .expandable-cards .thumb-button, .expandable-cards .thumb-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    opacity: var(--thumb-text-opacity);
+    transition: opacity .3s linear;
+    }
+    .expandable-cards h4 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1em;
+    }
+    .expandable-cards .thumb-text h3, .expandable-cards .thumb-text h4 {
+    margin-bottom: 1em;
+    font-weight: 500;
+    }
+    .expandable-cards .featured {
+    flex: 2;
+    }
+    @media (max-width: 767px) {
+        .expandable-cards {
+            flex-wrap: wrap;
+        }
+        .expandable-cards details {
+            min-width: 40%;
+            margin: 1vw;
+        }
+    }
+
+    }
+
+
 .home-page {       
     h1 {
         color: var(--black);
