@@ -1071,6 +1071,7 @@ section {
         display: grid;
         text-transform: uppercase;
         justify-content: start;
+        align-items: end;
     }
     .landing {
     min-height: 80svh;
@@ -1091,6 +1092,9 @@ section {
     }}
     /* CARD SYSTEM  */
     .expandable-cards {
+    h1 {
+        margin-bottom: 0;
+    }
     display: flex;
         summary {
             list-style: none;
