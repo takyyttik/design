@@ -498,6 +498,7 @@ body {
 .site-header.on-top {
     position: absolute;
     width: 100%;
+    z-index: 10;
 }
 @media (min-width: 768px) {
     .site-header {
@@ -1073,6 +1074,7 @@ section {
         justify-content: start;
         align-items: end;
     }
+
     .landing {
     min-height: 80svh;
     padding-top: 50svh;
@@ -1081,21 +1083,38 @@ section {
         align-items: end;
         justify-content: end;
     }}
+
     .about {
         .photostrip{
             img {
                 width: 10em;
             }
-            .dark-strip {transform: rotate(-10deg) translate(50px, 0px);}
-
-            .light-strip {transform: rotate(10deg) translate(20px, -120px);}
+            @media (min-width: 1250px){
+                .dark-strip {transform: rotate(-10deg) translate(50px, 0px);}
+                .light-strip {transform: rotate(10deg) translate(20px, -120px);}
+            }
+            @media (max-width: 767px) {
+                padding-top: 1em;
+                .mobile-strip{
+                    --gridgap: 1em;
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: var(--gridgap);}
+                .dark-strip {img{transform: rotate(-5deg) translate(7%, 7%);}}
+                .light-strip {img{transform: rotate(10deg) translate(10%, -12%);}}
+                .info-strip {}
+            }
     }}
+
     /* CARD SYSTEM  */
     .expandable-cards {
-    h1 {
-        margin-bottom: 0;
-    }
-    display: flex;
+        h1 {margin-bottom: 0;}
+        display: flex;
+        p {
+            padding-bottom: 2em;
+        }
         summary {
             list-style: none;
         }
@@ -1114,6 +1133,10 @@ section {
             box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
         }
     }
+    /* HIDE ACCORDIAN MARKER */
+    .expandable-cards .accordion-item__title::-webkit-details-marker {display: none;}
+    .expandable-cards .accordion-item__title::marker {content: "";}
+
     .expandable-cards details:focus-within, .expandable-cards details:focus {
     outline: 2px solid white;
     }
@@ -1165,14 +1188,21 @@ section {
     @media (max-width: 767px) {
         .expandable-cards {
             flex-wrap: wrap;
+            list-style: none;
         }
         .expandable-cards details {
             min-width: 40%;
             margin: 1vw;
         }
     }
-
+    .project-cards {
+    @media (max-width: 1050px) {
+        padding-top: 7%;}
+    @media (max-width: 600px) {
+        padding-top: 10%;}
     }
+}
+
 
 
 .home-page {       
@@ -1202,7 +1232,9 @@ section {
         padding-top: 5%;
         padding-bottom: 5%;
     }
+    
 }
+
 
 .chinese {
     font-family: "source-han-serif-tw-variable", sans-serif;
