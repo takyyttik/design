@@ -629,6 +629,9 @@ body {
         text-align: center;
         margin: 0 auto;
     }
+    .site-footer .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Main Site Section (Main Content Area) */
@@ -1083,7 +1086,7 @@ section {
         align-items: end;
         justify-content: end;
     }}
-
+    
     .about {
         .photostrip{
             img {
@@ -1096,18 +1099,24 @@ section {
             @media (max-width: 767px) {
                 padding-top: 1em;
                 .mobile-strip{
-                    --gridgap: 1em;
+                    --gridgap: 0;
                     display: grid;
                     justify-content: center;
-                    text-align: center;
+                    /* text-align: center; */
                     grid-template-columns: repeat(2, 1fr);
-                    gap: var(--gridgap);}
-                .dark-strip {img{transform: rotate(-5deg) translate(7%, 7%);}}
-                .light-strip {img{transform: rotate(10deg) translate(10%, -12%);}}
-                .info-strip {}
+                    gap: var(--gridgap);
+                }
+                img {width: 10em;}
+                .dark-strip {img{transform: rotate(-7deg) translate(15%, 3%);}}
+                .light-strip {img{transform: rotate(10deg) translate(10%, -10%);}}
+                .info-strip {
+                    /* width: 60svw; */
+                    display: contents;
+                    p {margin: 0 .3em 0.5em 0.3em;}
+                }
             }
     }}
-
+    
     /* CARD SYSTEM  */
     .expandable-cards {
         h1 {margin-bottom: 0;}
